@@ -1,0 +1,27 @@
+#! /usr/bin/python
+# -*- coding: utf-8 -*-
+
+#Import
+import sys
+
+def is_number(s):
+	try: 
+		float(s)
+		return True
+	except ValueError:
+		return False		
+
+def main():
+    while True:
+		aux=raw_input("Ingrese un número o X para salir: ")
+		if aux=="x":
+			sys.exit()
+		if is_number(aux):
+			print("El valor Ingresado es un número.")
+		else: 
+			print("El valor Ingresado NO es un número.")
+		
+		print("")
+         
+if __name__ == '__main__':
+    main()
