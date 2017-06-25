@@ -137,10 +137,16 @@ def main():
 			print("Se encendio el GPIO.Fila %d y el GPIO.Columna %d.") % (fila, col)
 			print("Es el LED de la Fila %d y la Columna %d.") % (var_f, var_c)
 			raw_input("Presione un tecla para encender otro LED \n")
-	except (KeyboardInterrupt, SystemExit, SystemError):
+	except (KeyboardInterrupt):
+		print("Programa detenido por Teclado")
 		GPIO.cleanup()
 		sys.exit()
-		raise
+	except:
+		e_exc=sys.exc_info()[0]
+		print e_exc
+		GPIO.cleanup()
+		sys.exit()
+
 		
 if __name__ == '__main__':
     main()	
