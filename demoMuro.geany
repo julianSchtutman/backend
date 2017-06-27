@@ -40,7 +40,7 @@ FILE_NAME_7=352;C;0;EUTF-8;1;1;0;%2Fhome%2Fjulian%2Fprojects%2FdemoMuro%2Fcomand
 
 [build-menu]
 CFT_01_LB=_Build
-CFT_01_CM=gcc -Wall -pthread -o muro muro.c matriz.c pintor.c comandos.c
+CFT_01_CM=gcc -Wall -pthread -o muro muro.c matriz.c pintor.c comandos.c -lwiringPi
 CFT_01_WD=
 filetypes=C;
 EX_00_LB=_Execute
