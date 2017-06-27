@@ -3,7 +3,7 @@
 
 //puerto al que se conecta el cliente
 #define PUERTO 5002
-//#define BOARD_PRESENT
+#define BOARD_PRESENT
 
 //definicion del comando que manda el cliente
 typedef struct{
